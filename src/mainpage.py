@@ -118,6 +118,56 @@ class MainPage(Frame):
         self.frm.config(width=750, height = 400)
         self.frm.place(x=470, y = 140)
 
+        b3 = Button(
+            text = "Creator",
+            command =  lambda:
+            [   self.popupuser()
+            ])
+
+        b3.place(
+            x = 900, y = 24,
+            width = 100,
+            height = 40)
+
+        b3 = Button(
+            text = "Guide",
+            command =  lambda:
+            [   self.popupguide()
+            ])
+
+        b3.place(
+            x = 900, y = 81,
+            width = 100,
+            height = 40)
+
+    def popupuser(self):
+        teks = "Created by : Saul Sayers\nNIM : 13520094\n"
+        teks += "\n About me?\n"
+        teks += "I was born in Surabaya on the third of February, 2002. I attended SMAN 5 Surabaya, i graduated in 2020.\nLuckily, i got the change for SNMPTN and later i got accepted to STEI ITB. I met many wonderful friends here"
+        teks += "\n\nAs i entered STEI ITB, i realized my passion for coding and programming.\nI learned many programming languages and frameworks during the timeframe of my college. Im really passionate about my studies."
+        teks += "\n\nI am really eager to join IRK LAB (:D)\nSemua mata kuliah paling aku favoritin ada di lab IRK soalnya heheheheheh"
+        top= Toplevel(self.controller)
+        width = 800
+        height = 300
+        top.geometry(str(width) + "x" + str(height))
+        top.title("Error Message")
+        self.labelpesan = Label(top, text= "\n" + teks, font=("Roboto bold", 10))
+        self.labelpesan.pack()
+
+    def popupguide(self):
+        teks = "- Membuka root dari repository yang telah anda clone dan jalankan program dengan memanfaatkan run.bat yang tersedia.\n\n"
+        teks += "- Ambil file input berisi DNA yang akan diperiksa penyelarasan optimalnya.\nProgram akan mendeteksi file input yang salah dan memberikan popup apabila input tidak berupa DNA\n\n"
+        teks += "- Setelah memilih kedua file input, silahkan klik tombol solve.\nApabila mengklik tombol solve sebelum memilih input, program akan menampilkan popup error.\n\n"
+        teks += "- Output yang diharapkan akan ditampilkan oleh program, berupa alignment,runtime program, matriks tracebacknya.\nUntuk kolom yang berisi warna merah merupakan kolom yang diambil rute tracebacknya.\nDengan catatan, karena rute diagonal bisa diambil saat mismatch ataupun match,\nmaka sebagai pembeda kolom biru merupakan rute diagonal yang diakibatkan karena mismatch sementara merah karena match"
+        top= Toplevel(self.controller)
+        width = 900
+        height = 300
+        top.geometry(str(width) + "x" + str(height))
+        top.title("Error Message")
+        self.labelpesan = Label(top, text= "\n" + teks, font=("Roboto bold", 10))
+        self.labelpesan.pack()
+
+
     def popup(self,message):
         top= Toplevel(self.controller)
         width = 350
