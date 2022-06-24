@@ -1,5 +1,6 @@
 # Global-DNA-Sequence-Alignment
-Desktop App written in Python with Tkinter for GUI using Needleman-Wunsch Algorithm
+Desktop App written in Python with Tkinter for GUI using Needleman-Wunsch Algorithm.
+Video demonstrasi program dapat diakses melalui tautan <a href="https://www.youtube.com/watch?v=JyGh9az8JKk">berikut.</a> 
 ## Table of Contents
 - [Global-DNA-Sequence-Alignment](#global-dna-sequence-alignment)
   - [Table of Contents](#table-of-contents)

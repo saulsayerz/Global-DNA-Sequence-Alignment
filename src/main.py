@@ -20,7 +20,7 @@ class App(tk.Tk):
         tk.Tk.__init__(self, *args, **kwargs)
         self.minsize(ConstantSize.WIDTH, ConstantSize.HEIGHT)
         self.maxsize(ConstantSize.WIDTH, ConstantSize.HEIGHT)
-        self.title("13520094 - SAUL - NeedlesWunch Program")
+        self.title("13520094 - SAUL - NeedlemanWunch Program")
 
         container = tk.Frame(self, bg = "white")
         container.pack(side = "top", fill = "both", expand = True)
